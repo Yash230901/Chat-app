@@ -1,0 +1,65 @@
+.joinPage{
+    background-color: rgb(31,29,29);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.joinContainer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.joinContainer h1{
+    color:#fff;
+    font-size:4vmax;
+    border-bottom: 0.2vmax solid white; 
+    padding: 1vmax;
+    text-align: center;
+}
+#joinInput{
+    width: 22vmax;
+    padding: 1.5vmax;
+    border: none;
+    font-size: 1.2vmax;
+    outline: none;
+    margin: 15px;
+}
+.LoginBtn{
+    cursor: pointer;
+    width: 25vmax;
+    padding: 1.5vmax;
+    border: none;
+    font-size: 1.2vmax;
+    outline: none;
+    color: white;
+    background-color:crimson;
+    transition: all o.3s;
+}
+.joinBtn:hover{
+ 
+    background-color:rgb(182, 12, 46);
+}
+
+@media screen and ( max-width:1020px) {
+    .joinContainer{
+        width:100%;
+    }
+    .joinContainer h1{
+        font-size:7vmax;
+    }
+    #joinInput{
+        width: 30vmax;
+        padding: 2vmax;
+        font-size: 2vmax;
+        margin: 15px;
+    }
+    .LoginBtn{
+        width: 34vmax;
+        padding: 2vmax;
+        font-size: 2vmax;
+    }
+}

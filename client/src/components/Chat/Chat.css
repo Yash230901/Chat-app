@@ -1,0 +1,89 @@
+.chatPage{
+    background-color: rgb(31,29,29);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chatContainer{
+    background-color: white;
+    width: 50%;
+    height:70%;
+}  
+.header{
+    background-color:skyblue;
+    height: 15%;
+    display:flex;
+    justify-content: space-between;
+}
+.header h2{
+    color: #fff;
+    margin:1.2vmax;
+}
+.header img{
+    cursor:pointer;
+    width: 70px;
+}
+.chatBox{
+    height:70%;
+    box-sizing: border-box;
+}
+.inputBox{
+    border-top:0.2px solid black;
+    height: 15%;
+    width: 100%;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-between;
+}
+#chatInput{
+    width:80%;
+    outline:none;
+    border: none;
+    font-size: 20px;
+    margin-left: 4px;
+}
+.sendBtn{
+    width: 20%;
+    color:#fff;
+    background-color:crimson;
+    border: none;
+    cursor:pointer;
+    transition:all  0.3s;
+}
+.sendBtn:hover{
+    background-color:rgb(150, 12, 39);
+}
+
+/* ----responsiveness--- */
+@media screen and ( max-width:1026px){
+    .chatContainer{
+        width: 100%;
+        height:100%;
+    }
+    .header{
+        height: 10%;
+    }  
+    .header h2{
+        font-size:4vw;
+        margin: 3vw;
+    }
+    .header img{
+        width: 60px;
+    }
+    .chatBox{
+        height:80%;
+    }
+    .inputBox{
+        height: 10%;
+    }
+    #chatInput{
+        margin-left: 6px;
+        padding:10px;
+        font-size: 30px;
+    }
+    .sendBtn{
+        font-size:23px;
+    }
+}
